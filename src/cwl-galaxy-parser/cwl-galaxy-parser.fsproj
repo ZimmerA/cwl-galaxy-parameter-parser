@@ -3,6 +3,8 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <WarnOn>3390;$(WarnOn)</WarnOn>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>cwl-galaxy-parser</ToolCommandName>
     <Authors>Adrian Zimmer</Authors>
     <Description>A tool to convert workflow parameters in the form of commandline arguments to .yml files.</Description>
     <Summary>A tool to convert workflow parameters in the form of commandline arguments to .yml files.</Summary>
