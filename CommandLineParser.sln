@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D92AFF2C-EBD7-4B0E-9696-8837A10A7362}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CommandLineParser", "src\CommandLineParser\CommandLineParser.fsproj", "{F16A8706-AFAC-422D-94CB-2913B6416C21}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "cwl-galaxy-parser", "src\cwl-galaxy-parser\cwl-galaxy-parser.fsproj", "{F16A8706-AFAC-422D-94CB-2913B6416C21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -137,7 +137,7 @@ let main argv =
         )
 
     let parser =
-        ArgumentParser.Create<CliArguments>(programName = "CommandLineParser", errorHandler = errorHandler)
+        ArgumentParser.Create<CliArguments>(programName = "cwl-galaxy-parser", errorHandler = errorHandler)
     let parsedResults = parser.ParseCommandLine argv
 
     let allResults = parsedResults.GetAllResults()

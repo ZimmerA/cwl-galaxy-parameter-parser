@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+    <Authors>Adrian Zimmer</Authors>
+    <Description>A tool to convert workflow parameters in the form of commandline arguments to .yml files.</Description>
+    <Summary>A tool to convert workflow parameters in the form of commandline arguments to .yml files.</Summary>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageTags></PackageTags>
+    <RepositoryUrl>https://github.com/ZimmerA/cwl-galaxy-parameter-parser</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <FsDocsLicenseLink></FsDocsLicenseLink>
+    <FsDocsReleaseNotesLink>https://github.com/ZimmerA/cwl-galaxy-parameter-parser/blob/master/RELEASE_NOTES.md</FsDocsReleaseNotesLink>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Argu" Version="6.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+</Project>
