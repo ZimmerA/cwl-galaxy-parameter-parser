@@ -88,7 +88,7 @@ let generateOutFile (inputParameterMap: Map<string, InputParameterMapTypes>) : s
                             try
                                 File.Copy(elem.[0], Path.Combine("./", Path.GetFileName(elem.[0])))
                             with
-                            | _ -> ()
+                            | ex -> printfn "~Exception~: %s" (ex.ToString());
 
                             acc
                             + key
@@ -110,11 +110,14 @@ let generateOutFile (inputParameterMap: Map<string, InputParameterMapTypes>) : s
                                            try
                                                File.Copy(v, Path.Combine("./", Path.GetFileName(v)))
                                            with
-                                           | _ -> ()
+                                           | ex -> printfn "~Exception~: %s" (ex.ToString());
 
                                            acc
                                            + "  - class: File\n"
-                                           + "   path: inputDataFolder/"
+                                           + "    identifier: "
+                                           + Path.GetFileNameWithoutExtension(v)
+                                           + "\n"
+                                           + "    path: inputDataFolder/"
                                            + Path.GetFileName(v)
                                            + "\n"))
                         | _ -> acc
